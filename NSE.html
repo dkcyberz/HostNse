@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	<title>Host Discovery NSE Script</title>
+</head>
+<body>
+	<h1>Host Discovery NSE Script</h1>
+	<p>This is a simple NSE script that performs host discovery by sending an ICMP Echo Request packet to each target to determine whether it is live or not.</p>
+
+	<h2>Script Information</h2>
+	<table>
+		<tr>
+			<th>Author</th>
+			<td>DhaneshKumar</td>
+		</tr>
+		<tr>
+			<th>Categories</th>
+			<td>Discovery</td>
+		</tr>
+		<tr>
+			<th>Description</th>
+			<td>Performs a simple host discovery by sending an ICMP Echo Request packet to each target to determine whether it is live or not.</td>
+		</tr>
+	</table>
+
+	<h2>Usage</h2>
+	<p>To use this script, simply run the following command:</p>
+	<p>nmap --script host-dis &lt;target&gt;</p>
+	<p>Replace &lt;target&gt; with the IP address or range of the target you want to scan.</p>
+
+	<h2>Output</h2>
+	<p>Host 192.168.254.16 is live.<br>
+	Host 192.168.254.77 is live.</p>
+	<p>The script will output a list of live hosts found on the target network, along with their IP addresses and hostnames (if available).</p>
+</body>
+</html>
